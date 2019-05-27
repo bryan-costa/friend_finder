@@ -1,5 +1,5 @@
-module.exports = (Sequelize, sequelize) => {
-    class Friend extends Sequelize.Model { }
+module.exports = (sequelize, Sequelize) => {
+    class Friend extends Sequelize.Model {}
     Friend.init(
         {
             name: {
@@ -13,7 +13,7 @@ module.exports = (Sequelize, sequelize) => {
                 type: Sequelize.JSON
             }
         },
-        {sequelize, modelName: friend}
+        {sequelize, modelName: 'friend'}
     )
-
+ return Friend
 }
