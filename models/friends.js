@@ -10,7 +10,7 @@ module.exports = (Sequelize, sequelize) => {
                 type: Sequelize.STRING
             },
             scores: {
-                type: 
+                type: Sequelize.JSON
             }
         },
         {sequelize, modelName: friend}
